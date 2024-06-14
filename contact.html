@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aladdin - All at your Doorstep</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-50 font-sans leading-normal tracking-normal" style="font-family: 'Oswald', sans-serif;">
+
+    <!-- Header -->
+    <header class="w-full bg-transparent absolute top-0 left-0 z-50">
+        <div class=" mx-auto flex justify-between items-center">
+            <div class="text-white text-3xl font-bold ">
+                <p class="bg-orange-500 px-10 py-8 ml-36 ">
+                    <img src="assets/Images/aluddin logo.png" class="h-20" alt="">
+                </p>
+            </div>
+            <div class="flex justify-between items-center -mt-2 text-xl -ml-44">
+                <a class="bg-white px-8 py-14 nav-element hover:text-white  cursor-pointer" href="index.html">HOME</a>
+                <a class="bg-white px-8 py-14 nav-element hover:text-white  cursor-pointer" href="product.html">PRODUCT</a>
+                <a class="bg-orange-500 px-8 py-14 text-white cursor-pointer border-gray-200" href="contact.html">CONTACT US</a>
+            </div>
+            <div></div>
+        </div>
+    </header>
+
+    <div class="relative">
+        <img src="assets/Images/restaurant-carousel-1.jpg" class="w-full h-64 object-cover" alt="Restaurant Image">
+        <div class="absolute bg-orange-500 transform translate-y-1/2 bottom-0 ml-36 flex">
+            <h2 class="text-4xl text-white px-8 py-4">CONTACT US</h2>
+            <div class="bg-orange-300 w-4 h-18"></div>
+        </div>
+    </div>
+
+    <div
+        class="max-w-screen-xl mt-16 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16  text-gray-900 mx-32">
+        <div class="flex flex-col justify-between">
+            <div>
+                <h2 class="text-4xl lg:text-5xl font-bold leading-tight">Lets talk about everything!</h2>
+                <div class="flex mt-8">
+                    <div class="flex h-12 w-12 items-center justify-center rounded bg-orange-500 text-gray-50">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="h-6 w-6">
+                            <path
+                                d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
+                            </path>
+                            <path d="M15 7a2 2 0 0 1 2 2"></path>
+                            <path d="M15 3a6 6 0 0 1 6 6"></path>
+                        </svg>
+                    </div>
+                    <div class="ml-4 mb-4">
+                        <h3 class=" text-lg font-medium leading-6 text-gray-900 dark:text-white">Call Us!
+                        </h3>
+                        <p class="text-gray-600 dark:text-slate-400">Mobile: +91 99 6778 6000</p>
+                    </div>
+                </div>
+                <div class="flex mt-8">
+                    <div class="flex h-12 w-12 items-center justify-center rounded bg-orange-500 text-gray-50">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="h-6 w-6 ">
+                            <path
+                                d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
+                            </path>
+                            <path d="M15 7a2 2 0 0 1 2 2"></path>
+                            <path d="M15 3a6 6 0 0 1 6 6"></path>
+                        </svg>
+                    </div>
+                    <div class="ml-4 mb-4">
+                        <h3 class=" text-lg font-medium leading-6 text-gray-900 dark:text-white">Mail Us!
+                        </h3>
+                        <p class="text-gray-600 dark:text-slate-400">Email: aladdin400050@gmail.com</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <form action="http://formsubmit.co/aladdin400050@gmail.com" method="post" target="_blank" class="">
+            <div>
+                <span class="uppercase text-sm text-gray-600 font-bold">Full Name</span>
+                <input
+                    class="w-full bg-gray-300 text-gray-900 mt-2 p-3 focus:outline-none focus:shadow-outline"
+                    type="text" placeholder="" name="name">
+            </div>
+            <div class="mt-8">
+                <span class="uppercase text-sm text-gray-600 font-bold">Email</span>
+                <input name="email"
+                    class="w-full bg-gray-300 text-gray-900 mt-2 p-3 focus:outline-none focus:shadow-outline"
+                    type="text">
+            </div>
+            <div class="mt-8">
+                <span class="uppercase text-sm text-gray-600 font-bold">Message</span>
+                <textarea name="message"
+                    class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 focus:outline-none focus:shadow-outline"></textarea>
+            </div>
+            <div class="mt-8">
+                <button type="submit"
+                    class="uppercase text-sm font-bold tracking-wide bg-orange-500 text-white p-3 w-full focus:outline-none focus:shadow-outline">
+                    Send Message
+                </button>
+            </div>
+            </form></div>
+
+        <!-- Footer -->
+        <footer class="bg-orange-500 py-4 text-white mt-16">
+            <div class="container mx-auto text-center flex justify-between">
+                <div class="text-left text-md">
+                    <p>&copy; 2024 Millionaires Hospitatlity Pvt. Ltd. All rights reserved.</p>
+                    <p class="mt-1 font-light tracking-wider">Developed by Capmagtech</p>
+                </div>
+                <div class="flex gap-3 justify-between items-center">
+                    <img class="h-10 cursor-pointer" src="assets/Images/gplay.svg" alt="image description">
+                    <img class="h-10 cursor-pointer" src="assets/Images/appstore.svg" alt="image description">
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+</body>
+
+</html>

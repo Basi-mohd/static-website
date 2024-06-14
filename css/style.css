@@ -1,0 +1,11 @@
+body{
+    font-family: "Oswald", sans-serif;
+}
+
+.normal-font{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-element:hover{
+    background-color: rgb(255 90 31 / var(--tw-bg-opacity));
+}
