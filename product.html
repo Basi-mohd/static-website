@@ -16,7 +16,7 @@
 <body class="bg-gray-50 font-sans leading-normal tracking-normal" style="font-family: 'Oswald', sans-serif;">
 
     <!-- Header -->
-    <header class="w-full bg-transparent absolute top-0 left-0 z-50">
+    <header class="w-full bg-transparent absolute top-0 left-0 z-50  hidden md:block">
         <div class=" mx-auto flex justify-between items-center">
             <div class="text-white text-3xl font-bold ">
                 <p class="bg-orange-500 px-10 py-8 ml-36 ">
@@ -32,9 +32,36 @@
         </div>
     </header>
 
-    <div class="mt-44">
+    <header class="w-full bg-transparent absolute top-0 left-0 z-50 md:hidden">
+        <div class="container mx-auto flex justify-between items-center p-5  bg-orange-500 ">
+            <!-- Logo Section -->
+            <div class="text-white text-3xl font-bold">
+                <a href="index.html" class="flex items-center">
+                    <img src="assets/Images/aluddin logo.png" class="h-12" alt="Logo">
+                </a>
+            </div>
+            <!-- Mobile Menu Toggle Button -->
+            <details class="md:hidden relative">
+                <summary class="list-none inline-flex items-center justify-center p-2 w-10 h-10 text-white rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 cursor-pointer">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </summary>
+                <div class="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <nav class="flex flex-col space-y-1 py-2">
+                        <a class="block px-4 py-2 bg-white text-gray-900 nav-element hover:text-white cursor-pointer" href="index.html">HOME</a>
+                        <a class="block px-4 py-2 text-gray-900 bg-orange-500 text-white cursor-pointer border-gray-200" href="product.html">PRODUCT</a>
+                        <a class="block px-4 py-2 bg-white text-gray-900 nav-element hover:text-white cursor-pointer" href="contact.html">CONTACT US</a>
+                    </nav>
+                </div>
+            </details>
+        </div>
+    </header>
 
-        <p class="mx-36 text-center text-xl">Unlock the power of our comprehensive backend application, featuring a sleek dashboard that
+    <div class="md:mt-44 mt-32">
+
+        <p class="md:mx-36 mx-10 text-center text-xl">Unlock the power of our comprehensive backend application, featuring a sleek dashboard that
             provides valuable
             insights into your business performance. Track orders, analyze customer preferences, and leverage key
             metrics to
@@ -42,13 +69,13 @@
             restaurant's success to new heights. Join us now and harness the full potential of your business!</p>
     </div>
 
-    <div class="flex mx-36 mt-14">
+    <div class="md:flex md:mx-36 mt-14 mx-10">
         <!-- Image Section -->
-        <div class="w-2/5 flex justify-center items-center">
+        <div class="md:w-2/5 flex justify-center items-center">
             <img src="assets/Images/Untitled-1.png" alt="Food Image" class="max-w-full">
         </div>
         <!-- Description Section -->
-        <div class="w-3/5 flex flex-col justify-center items-start">
+        <div class="md:w-3/5 flex flex-col justify-center items-start">
             <div class="normal-font my-5 mx-12">
                 <p class="font-semibold text-2xl mb-4">Welcome to Aladdin Food Delivery App</p>
                 <p class="text-lg">
@@ -65,11 +92,11 @@
     </div>
     
 
-    <div class="mt-20 mb-10 flex justify-center items-center">
+    <div class="mt-20 mb-10 flex justify-center items-center mx-10 md:mx-0">
         <img src="assets/Images/laptop preview.png" alt="">
     </div>
 
-    <div class=" flex justify-center items-center mx-64 mb-14">
+    <div class=" flex justify-center items-center md:mx-64 mb-14 mx-10">
         <div>
             <p class="text-2xl mb-2">Advanced Backend Dashboard for Restaurants and Partners</p>
         <p  class="normal-font">Aladdin Food Delivery App provides a robust backend dashboard for restaurant partners, offering detailed insights and analytics to optimize operations and drive growth. Key features include:
@@ -96,12 +123,12 @@
 
     <!-- Footer -->
     <footer class="bg-orange-500 py-4 text-white">
-        <div class="container mx-auto text-center flex justify-between">
-            <div class="text-left text-md">
+        <div class="container mx-auto text-center md:flex md:justify-between flex-row justify-center items-center mt-2 md:mt-0">
+            <div class="md:text-left text-md">
                 <p>&copy; 2024 Millionaires Hospitatlity Pvt. Ltd. All rights reserved.</p>
                 <p class="mt-1 font-light tracking-wider">Developed by Capmagtech</p>
             </div>
-            <div class="flex gap-3 justify-between items-center">
+            <div class="flex gap-3 md:justify-between items-center justify-center mt-6  md:mt-0">
                 <img class="h-10 cursor-pointer" src="assets/Images/gplay.svg" alt="image description">
                 <img class="h-10 cursor-pointer" src="assets/Images/appstore.svg" alt="image description">
             </div>
@@ -109,7 +136,13 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-
+    <script>
+        // JavaScript to toggle the menu visibility on mobile
+        document.getElementById('navbar-toggle').addEventListener('click', function() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('hidden');
+        });
+    </script>
 </body>
 
 </html>

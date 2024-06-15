@@ -16,7 +16,7 @@
 <body class="bg-gray-50 font-sans leading-normal tracking-normal" style="font-family: 'Oswald', sans-serif;">
 
     <!-- Header -->
-    <header class="w-full bg-transparent absolute top-0 left-0 z-50">
+    <header class="w-full bg-transparent absolute top-0 left-0 z-50 hidden md:block">
         <div class=" mx-auto flex justify-between items-center">
             <div class="text-white text-3xl font-bold ">
                 <p class="bg-orange-500 px-10 py-8 ml-36 ">
@@ -34,11 +34,39 @@
         </div>
     </header>
 
+    <header class="w-full bg-transparent absolute top-0 left-0 z-50 md:hidden">
+        <div class="container mx-auto flex justify-between items-center p-5  bg-orange-500 ">
+            <!-- Logo Section -->
+            <div class="text-white text-3xl font-bold">
+                <a href="index.html" class="flex items-center">
+                    <img src="assets/Images/aluddin logo.png" class="h-12" alt="Logo">
+                </a>
+            </div>
+            <!-- Mobile Menu Toggle Button -->
+            <details class="md:hidden relative">
+                <summary class="list-none inline-flex items-center justify-center p-2 w-10 h-10 text-white rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 cursor-pointer">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </summary>
+                <div class="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 focus:outline-none">
+                    <nav class="flex flex-col space-y-1 py-2">
+                        <a class="block px-4 py-2 text-gray-900 bg-orange-500 text-white cursor-pointer border-gray-200" href="index.html">HOME</a>
+                        <a class="block px-4 py-2 bg-white text-gray-900 nav-element hover:text-white cursor-pointer" href="product.html">PRODUCT</a>
+                        <a class="block px-4 py-2 bg-white text-gray-900 nav-element hover:text-white cursor-pointer" href="contact.html">CONTACT US</a>
+                    </nav>
+                </div>
+            </details>
+        </div>
+    </header>
 
 
-    <div id="default-carousel" class="relative w-full h-screen" data-carousel="slide">
+
+
+    <div id="default-carousel" class="relative w-full md:h-screen mt-24 md:mt-0" data-carousel="slide">
         <!-- Carousel wrapper -->
-        <div class="relative  h-screen overflow-hidden">
+        <div class="relative h-screen  overflow-hidden hidden md:block">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out h-screen" data-carousel-item>
                 <img src="assets/Images/carousel/1.png" class="absolute block w-full bottom-0" alt="...">
@@ -50,6 +78,25 @@
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="assets/Images/carousel/3.png" class="absolute block w-full bottom-0" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="assets/Images/carousel/4.png" class="absolute block w-full" alt="...">
+            </div>
+        </div>
+
+        <div class="relative h-64 overflow-hidden md:hidden">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="assets/Images/carousel/1.png" class="absolute block w-full" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="assets/Images/carousel/2.png" class="absolute block w-full" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="assets/Images/carousel/3.png" class="absolute block w-full" alt="...">
             </div>
             <!-- Item 4 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
@@ -96,37 +143,37 @@
 
 
     <!-- Service Introduction -->
-    <section class="py-16 bg-white flex px-44 gap-8">
+    <section class="md:py-16 bg-white md:flex md:px-44 px-10 gap-8 py-10">
         <div>
             <img src="assets/Images/restaurant-carousel-1.jpg" class="">
         </div>
         <div class="container mx-auto text-left">
-            <h2 class="text-4xl font-medium mb-4">Service Intro</h2>
+            <h2 class="text-4xl font-medium mb-4">About Us</h2>
             <p class="text-gray-700 font-normal tracking-wide mb-5" style="font-family: Segoe UI;">Calling all
                 restaurant entrepreneurs! Ready to skyrocket your sales? Partner with our top-rated food delivery app
                 today! Gain instant online exposure, attract more customers, and maximize your revenue stream. Don't
                 miss out on this opportunity! Join forces with us now and watch your restaurant thrive in
                 the digital age!</p>
-            <a href="" class="bg-orange-500 text-white px-5 py-2">Explore Product</a>
+            <a href="product.html" class="bg-orange-500 text-white px-5 py-2">Explore Product</a>
         </div>
     </section>
 
-    <section class="py-16 bg-white flex px-44 gap-8">
+    <section class="md:py-16 bg-white md:flex md:px-44 px-10 gap-8 py-10">
 
         <div class="container mx-auto text-left ">
-            <p class="text-gray-700 font-normal tracking-wide mb-5 text-2xl text-right" style="font-family: Segoe UI;">Indulge in the
-                flavors of Thane delivered right to your <br> doorstep in Palava and surrounding areas! From the <br>bustling
-                streets of Kalwa to the vibrant markets of<br> Dombivli, we've got your cravings covered. Experience<br>
-                convenience and culinary delight with our food delivery <br>service spanning Thane to Palava, including
-                Mumbra,<br> Shilphata, and Mahape.</p>
+            <p class="text-gray-700 font-normal tracking-wide mb-5 md:text-2xl md:text-right text-lg " style="font-family: Segoe UI;">Indulge in the
+                flavors of Thane delivered right to your  doorstep in Palava and surrounding areas! From the bustling
+                streets of Kalwa to the vibrant markets of Dombivli, we've got your cravings covered. Experience
+                convenience and culinary delight with our food delivery service spanning Thane to Palava, including
+                Mumbra, Shilphata, and Mahape.</p>
         </div>
-        <div class="w-1/3">
+        <div class="md:w-1/3">
             <img src="assets/Images/mockup.png" class="">
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="py-12 bg-orange-500">
+    <section id="testimonials" class="py-12 bg-orange-500 px-10 md:px-0">
         <svg class="h-12 mx-auto mb-3 text-white dark:text-gray-600" viewBox="0 0 24 27" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -216,24 +263,25 @@
     <section id="partners" class="py-16 bg-white mb-8">
         <div class="container mx-auto text-center">
             <h2 class="text-4xl font-semibold mb-8">Our Partners</h2>
-            <div class="flex justify-center gap-16">
-                <img class="rounded-full w-44 h-44" src="assets/Images/profile.jpg" alt="image description">
-                <img class="rounded-full w-44 h-44" src="assets/Images/profile.jpg" alt="image description">
-                <img class="rounded-full w-44 h-44" src="assets/Images/profile.jpg" alt="image description">
-                <img class="rounded-full w-44 h-44" src="assets/Images/profile.jpg" alt="image description">
-                <img class="rounded-full w-44 h-44" src="assets/Images/profile.jpg" alt="image description">
+            <div class="flex flex-wrap justify-center gap-16">
+                <img class="rounded-full w-44 h-44 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-44 lg:h-44" src="assets/Images/profile.jpg" alt="image description">
+                <img class="rounded-full w-44 h-44 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-44 lg:h-44" src="assets/Images/profile.jpg" alt="image description">
+                <img class="rounded-full w-44 h-44 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-44 lg:h-44" src="assets/Images/profile.jpg" alt="image description">
+                <img class="rounded-full w-44 h-44 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-44 lg:h-44" src="assets/Images/profile.jpg" alt="image description">
+                <img class="rounded-full w-44 h-44 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-44 lg:h-44" src="assets/Images/profile.jpg" alt="image description">
             </div>
+            
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-orange-500 py-4 text-white">
-        <div class="container mx-auto text-center flex justify-between">
-            <div class="text-left text-md">
+        <div class="container mx-auto text-center md:flex md:justify-between flex-row justify-center items-center mt-2 md:mt-0">
+            <div class="md:text-left text-md">
                 <p>&copy; 2024 Millionaires Hospitatlity Pvt. Ltd. All rights reserved.</p>
                 <p class="mt-1 font-light tracking-wider">Developed by Capmagtech</p>
             </div>
-            <div class="flex gap-3 justify-between items-center">
+            <div class="flex gap-3 md:justify-between items-center justify-center mt-6  md:mt-0">
                 <img class="h-10 cursor-pointer" src="assets/Images/gplay.svg" alt="image description">
                 <img class="h-10 cursor-pointer" src="assets/Images/appstore.svg" alt="image description">
             </div>
@@ -241,7 +289,13 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-
+    <script>
+        // JavaScript to toggle the menu visibility on mobile
+        document.getElementById('navbar-toggle').addEventListener('click', function() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('hidden');
+        });
+    </script>
 </body>
 
 </html>
